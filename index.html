@@ -50,7 +50,7 @@
         }
 
         .overlay {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(178, 224, 221, 0.774);
             position: absolute;
             top: 0;
             left: 0;
@@ -65,22 +65,93 @@
         }
 
         section {
-            background-image: url('https://gotazil.com.br/wp-content/uploads/2023/09/CAPA1-PV-min.png');
+            background-color: #B2E0DD;
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
         }
+
+
+
+
+
+
+
+        .offer-card {
+        background: linear-gradient(145deg, #28CBDB, #0B99A7);
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .offer-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .offer-card .card-body {
+        padding: 2rem 1.5rem;
+    }
+
+    .offer-card .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .offer-card .price {
+        font-size: 1.5rem;
+        color: #FFD700;
+        margin-bottom: 1.5rem;
+    }
+
+    .offer-card .offer-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn.custom-btn {
+        background-color: #880D11;
+        color: #FFF;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.3rem;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        text-transform: uppercase;
+    }
+
+    .btn.custom-btn:hover {
+        background-color: #700A0D;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body .row {
+        margin-top: 1rem;
+    }
+
+
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+  
     </style>
 </head>
 
 <body>
-    <section>
+    <section style="background-image: url('https://gotazil.com.br/wp-content/uploads/2023/09/CAPA1-PV-min.png');">
         <div class="overlay"></div>
         <div class="container text-center p-5 content">
             <div class="row p-3">
                 <div class="col-md-6 mx-auto my-auto">
-                    <img src="https://gotazil.com.br/wp-content/uploads/2023/09/CAPA-min-2-509x1024.png" alt="GotaZil Logo" class="img-fluid col-4 col-md-6 col-lg-4">
+                    <img src="./capa-min.svg" alt="GotaZil Logo" class="img-fluid col-6 col-md-10 col-lg-6">
                 </div>
                 <div class="col-md-6 mx-auto my-auto">
                     <div class="row">
@@ -88,41 +159,518 @@
                             <img src="https://gotazil.com.br/wp-content/uploads/2023/09/LOGO1-1.svg" alt="GotaZil Logo" class="img-fluid">
                         </div>
                         <div class="col-12 mx-auto p-3">
-                            <h2 class="fw-bold fs-1">Você sofre com</h2>
-                            <h2 class="fs-2">Refluxo, azia ou gastrite?</h2>
-                            <p class="lead mt-3 mb-3 fs-5 fw-bold" style="color: #00373A;">Aproveite suas comidas preferidas sem preocupações, mesmo quando se trata de problemas
-                                como gastrite, refluxo ou desconforto no estômago. GotaZil é a opção que atua de forma natural para
-                                ajudar a lidar com essas questões de dentro para fora.</p>
+                            <h2 class="fw-bold fs-1 text-uppercase" style="color: #085D63; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Você Sofre com</h2>
+<h2 class="fs-2 text-uppercase" style="color: #ff0000; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Refluxo, Azia ou Gastrite?</h2>
+<p class="lead mt-3 mb-3 fs-5 fw-bold" style="color: #00373A;">
+    Desfrute das suas <span style="font-weight: bold; color: #ff0000; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">COMIDAS PREFERIDAS</span> com <span style="font-weight: bold; color: #ff0000; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">MAIS TRANQUILIDADE</span>. GotaZil é uma <span style="font-weight: bold; color: #ff0000; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">ALTERNATIVA NATURAL</span> que pode ajudar a promover o <span style="font-weight: bold; color: #ff0000; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">BEM-ESTAR DIGESTIVO</span> de forma única.
+</p>
+
+
                             <a href="#preco" class="cta-button mt-2 fw-bold">Quero Experimentar!</a>
                         </div>
                     </div>
                 </div>
             </div>
-
+ 
             <div class="row mt-4 p-3 bg-black mx-auto" style="border-radius: 20px; background-color: transparent;
     background-image: linear-gradient(180deg, #28CBDB 0%, #0B99A7 100%);" >
                 <div class="col-md-3 col-sm-6 icon-box my-auto p-2 mx-auto">
-                    <img class="img-fluid col-3" src="azia.svg" alt="Alívio de Desconforto">
-                    <h3 class="text-white mt-2 fs-5">Ajuda a aliviar o desconforto e azia estomacal</h3>
+                    <img class="img-fluid col-2" src="azia.svg" alt="Alívio de Desconforto">
+                    <h3 class="text-white mt-2 p-2 fs-6 text-uppercase" style="background: linear-gradient(to right, #085D63, #0B99A7); padding: 10px; border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">
+                        Alívio para Desconforto e Azia Estomacal
+                    </h3>
                 </div>
                 <div class="col-md-3 col-sm-6 icon-box my-auto p-2 mx-auto">
-                    <img class="img-fluid col-3" src="refluxo.svg" alt="Tratamento de Refluxo">
-                    <h3 class="text-white mt-2 fs-5">Trata seu refluxo com eficácia!</h3>
+                    <img class="img-fluid col-2" src="refluxo.svg" alt="Refluxo">
+                    <h3 class="text-white mt-2 p-2 fs-6 text-uppercase" style="background: linear-gradient(to right, #085D63, #0B99A7); padding: 10px; border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">
+                        Auxilia no Controle do Refluxo
+                    </h3>
                 </div>
                 <div class="col-md-3 col-sm-6 icon-box my-auto p-2 mx-auto">
-                    <img class="img-fluid col-3" src="mauhalito.svg" alt="Mau Hálito">
-                    <h3 class="text-white mt-2 fs-5">Sem se constranger com o mau hálito ácido e forte</h3>
+                    <img class="img-fluid col-2" src="mauhalito.svg" alt="Mau Hálito">
+                    <h3 class="text-white mt-2 p-2 fs-6 text-uppercase" style="background: linear-gradient(to right, #085D63, #0B99A7); padding: 10px; border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">
+                        Bem-estar com Mau Hálito Ácido e Forte
+                    </h3>
                 </div>
                 <div class="col-md-3 col-sm-6 icon-box my-auto p-2 mx-auto">
-                    <img class="img-fluid col-3" src="estomago.svg" alt="Redução de Dores">
-                    <h3 class="text-white mt-2 fs-5">Reduz dores intensas na região do peito e do estômago</h3>
+                    <img class="img-fluid col-2" src="estomago.svg" alt="Dores Estomacais">
+                    <h3 class="text-white mt-2 p-2 fs-6 text-uppercase" style="background: linear-gradient(to right, #085D63, #0B99A7); padding: 10px; border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">
+                        Conforto para Dores na Região do Peito e Estômago
+                    </h3>
                 </div>
             </div>
+    </section>
 
-            
 
+    <section class="py-5" style="background-image: url(https://gotazil.com.br/wp-content/uploads/2023/09/capa3-2.png);">
+        <div class="container text-center">
+            <h2 class="fw-bold fs-1 text-uppercase" style="color: #00eeff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">A Solução Ideal para Seus Problemas Estomacais!</h2>
+            <h2 class="fs-2 text-uppercase" style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Veja Alguns Benefícios que o <span style="color: #17f0ff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">GOTAZIL</span> Pode Oferecer</h2>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4 p-3 mx-auto">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/1-3-1.jpg" class="img-fluid rounded-circle" alt="Desconforto Estomacal">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body text-white">
+                                    <h3 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Eficaz Contra o Desconforto Estomacal</h3>
+                                    <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">Muitas vezes, o desconforto é resultado de um desequilíbrio alimentar, infecções ou uso de medicamentos. Não deixe que o estresse comprometa seu bem-estar. Viva sem privações!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4 p-3 mx-auto">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/2.jpg" class="img-fluid rounded-circle" alt="Comer o que Gosta">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body text-white">
+                                    <h3 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Não Deixe de Comer o que Gosta</h3>
+                                    <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">Aproveite eventos sociais e comidas deliciosas sem medo do desconforto noturno. Desfrute de cada momento com mais tranquilidade e confiança.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4 p-3 mx-auto">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/3-2.jpg" class="img-fluid rounded-circle" alt="Mau Hálito">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body text-white">
+                                    <h3 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Sem Constrangimento pelo Mau Hálito</h3>
+                                    <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">O mau hálito causado pelo suco gástrico pode ser embaraçoso. Sinta-se confiante com uma abordagem que atua de dentro para fora.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4 p-3 mx-auto">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/4.jpg" class="img-fluid rounded-circle" alt="Queimação">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body text-white">
+                                    <h3 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Queimação Nunca Mais</h3>
+                                    <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">A queimação causada pelo ácido gástrico pode ser evitada. Descubra uma solução eficaz que proporciona alívio e bem-estar duradouro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="#preco" class="cta-button mt-2 fw-bold">Quero Experimentar o GotaZil!</a>                
+            </div>
         </div>
     </section>
+    
+    
+    
+    <section class="py-5" style="background-image: url(https://gotazil.com.br/wp-content/uploads/2023/09/CAPA3-PV-min.png);">
+        <div class="container text-center">
+            <h2 class="fw-bold fs-1 text-uppercase" style="color: #085D63; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Fórmula Natural e Segura com Componentes Especiais</h2>
+            <h3 class="fs-2 text-uppercase" style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Descubra os Benefícios do <span style="color: #085D63; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">GOTAZIL</span></h3>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="card-body text-white">
+                            <div class="text-center mb-3">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/Sem-Titulo-1_0001_Camada-4.jpg" class="img-fluid rounded-circle" alt="Biotina" style="width: 100px;">
+                            </div>
+                            <h4 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Biotina</h4>
+                            <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">A Biotina é essencial para o metabolismo de carboidratos, proteínas e gorduras, ajudando no funcionamento adequado do intestino e na regulação dos níveis de glicose no sangue.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="card-body text-white">
+                            <div class="text-center mb-3">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/Sem-Titulo-1_0000_Camada-7.jpg" class="img-fluid rounded-circle" alt="Cianocobalamina" style="width: 100px;">
+                            </div>
+                            <h4 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Cianocobalamina</h4>
+                            <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">A vitamina B12 auxilia na melhora da gastrite e da acidez estomacal. Estudos indicam que a suplementação pode reduzir os sintomas causados pelo H. pylori.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="card-body text-white">
+                            <div class="text-center mb-3">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/Sem-Titulo-1_0002_Camada-3.jpg" class="img-fluid rounded-circle" alt="Piridoxina" style="width: 100px;">
+                            </div>
+                            <h4 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Piridoxina</h4>
+                            <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">A vitamina B6 é crucial para a digestão e absorção de nutrientes, ajudando a controlar a ação do suco gástrico e promovendo a saúde intestinal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="card-body text-white">
+                            <div class="text-center mb-3">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/Sem-Titulo-1_0001_Camada-4.jpg" class="img-fluid rounded-circle" alt="Zinco" style="width: 100px;">
+                            </div>
+                            <h4 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Zinco</h4>
+                            <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">O Zinco protege a membrana estomacal e possui ação antimicrobiana e anti-inflamatória, além de ajudar na cicatrização de lesões gástricas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="card-body text-white">
+                            <div class="text-center mb-3">
+                                <img src="https://gotazil.com.br/wp-content/uploads/2023/09/10.jpg" class="img-fluid rounded-circle" alt="Ácido Fólico" style="width: 100px;">
+                            </div>
+                            <h4 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Ácido Fólico</h4>
+                            <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">O Ácido Fólico auxilia na recuperação da mucosa estomacal e pode reduzir o risco de alterações celulares malignas, contribuindo para a saúde geral do sistema digestivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="#preco" class="cta-button mt-2 fw-bold">
+                    Eu Quero o GotaZil!
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-5" style="background-color: #F8F9FA;">
+        <div class="container text-center">
+            <h2 class="fw-bold fs-1 text-uppercase" style="color: #fff; background: linear-gradient(to right, #0B99A7, #28CBDB); padding: 15px 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+                Garantia de Resultados ou Seu Dinheiro de Volta!
+            </h2>
+            <div class="row mt-5 d-flex align-items-center">
+                <!-- Imagem -->
+                <div class="col-md-6 mb-4">
+                    <img src="https://gotazil.com.br/wp-content/uploads/2023/09/Sem-Titulo-1-1-1-1.png" class="img-fluid mx-auto d-block" alt="Garantia de Resultados" style="max-width: 80%; border: 5px solid #0B99A7; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+                </div>
+                <!-- Texto -->
+                <div class="col-md-6 mb-4">
+                    <div class=" shadow-lg border-0 h-100" style="background: linear-gradient(to right, #0B99A7, #28CBDB); border-radius: 15px;">
+                        <div class="card-body text-white p-4">
+                            <h3 class="card-title fw-bold text-uppercase" style="color: #FFD700; font-size: 2em; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);">
+                                Garantia Incondicional
+                            </h3>
+                            <p class="card-text fs-5 fw-bolder" style="text-align: justify; line-height: 1.75; font-size: 1.2em;">
+                                Confiamos tanto na qualidade do <strong>Gotazil</strong> que garantimos resultados. Se em 90 dias após a compra você não perceber melhora na disposição e bem-estar, devolvemos o seu dinheiro. Isso mesmo! Tenha resultados ou seu dinheiro de volta!
+                            </p>
+                            <a href="#preco" class="cta-button mt-2 fw-bold" style="display: inline-block; background: #FFD700; color: #0B99A7; padding: 1rem 2rem; font-size: 1.5em; border-radius: 50px; text-decoration: none; text-transform: uppercase; transition: background-color 0.3s, transform 0.3s; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+                                Quero o Gotazil!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold fs-1 text-uppercase" style="color: #085D63; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Opinião de Quem Já Usou!</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="card-body text-white text-center">
+                            <img src="https://gotazil.com.br/wp-content/uploads/2023/09/Sem-Titulo-1_0001_problemas-erecao-50-anos-1200x900-1.jpg" class="img-fluid rounded-circle mb-3" alt="Antônio Alencar" style="width: 100px;">
+                            <h4 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Antônio Alencar, 61 anos</h4>
+                            <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">"Devido ao meu refluxo, tenho mau hálito constante, sempre tendo que disfarçar com balas e enxaguante bucal, comecei a tomar o Gotazil e não senti mais problemas de refluxo e consequentemente meu mau hálito foi embora!"</p>
+                            <div class="elementor-star-rating" title="5/5">
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="card-body text-white text-center">
+                            <img src="https://gotazil.com.br/wp-content/uploads/2023/09/21-1-1-1.jpg" class="img-fluid rounded-circle mb-3" alt="Cícero Andrade" style="width: 100px;">
+                            <h4 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Cícero Andrade, 45 anos</h4>
+                            <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">"Sofro de refluxo há alguns anos, assumo que não cuido direito, pois não tenho tempo para ficar indo em médico e passando por toda aquela burocracia chata de consultório, estou usando o Gotazil há alguns dias e sinto uma melhora considerada! Obrigado."</p>
+                            <div class="elementor-star-rating" title="5/5">
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-3 h-100" style="background: linear-gradient(to right, #28CBDB, #0B99A7); border-radius: 15px;">
+                        <div class="card-body text-white text-center">
+                            <img src="https://gotazil.com.br/wp-content/uploads/2023/09/Sem-Titulo-1_0000_images.jpg" class="img-fluid rounded-circle mb-3" alt="Márcio André" style="width: 100px;">
+                            <h4 class="card-title text-uppercase fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Márcio André, 57 anos</h4>
+                            <p class="fs-6 card-text fw-bolder" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">"Sofria muito com má digestão frequente, já fiz diversos exames e nunca tive resposta conclusiva, graças ao Gotazil eu estou tendo paz e podendo comer tudo que bem entendo! Claro que cuidando para não exagerar rs, mas as vezes me dou esse luxo."</p>
+                            <div class="elementor-star-rating" title="5/5">
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                                <i class="elementor-star-full">★</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="#preco" class="cta-button mt-2 fw-bold">
+                    Quero me Livrar do Refluxo!
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <section id="preco" class="py-5" style="background-color: #F8F9FA;">
+        <div class="container text-center">
+            <h2 class="fw-bold fs-1 text-uppercase" style="color: #fff; background-color: #880D11; padding: 10px; border-radius: 5px;">
+                Escolha o <span style="color: #ff4500;">MELHOR TRATAMENTO</span> para o seu corpo!
+            </h2>
+            <div class="row mt-5">
+                <!-- Card 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm offer-card border-0 h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title" style="color: #880D11; font-weight: bold;">1 Frasco Gotazil</h3>
+                            <img src="./1.svg" class="img-fluid offer-img mb-3" alt="1 Frasco Gotazil">
+                            <p class="price"><s style="color: #ff4500;">R$297,00</s> <br> <span style="color: #880D11; font-weight: bold; font-size: 1.5em;">R$197,00</span></p>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-4 col-md-12 col-lg-6 mx-auto">
+                                        <img src="correios.png" class="img-fluid mb-2" alt="Frete Grátis">
+                                    </div>
+                                    <div class="col-12 mx-auto">
+                                        <img src="frete.svg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#preco" class="btn custom-btn shadow-lg fw-bolder text-uppercase">Comprar Agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm offer-card border-0 h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title" style="color: #880D11; font-weight: bold;">Compre 2 ganhe mais 1</h3>
+                            <img src="./2+1.svg" class="img-fluid offer-img mb-3" alt="3 Frascos Gotazil">
+                            <p class="price"><s style="color: #ff4500;">R$497,00</s> <br> <span style="color: #880D11; font-weight: bold; font-size: 1.5em;">R$297,00</span></p>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-4 col-md-12 col-lg-6 mx-auto">
+                                        <img src="correios.png" class="img-fluid mb-2" alt="Frete Grátis">
+                                    </div>
+                                    <div class="col-12 mx-auto">
+                                        <img src="frete.svg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#preco" class="btn custom-btn shadow-lg fw-bolder text-uppercase">Comprar Agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm offer-card border-0 h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title" style="color: #880D11; font-weight: bold;">Compre 3 ganhe mais 2</h3>
+                            <img src="./3+2.svg" class="img-fluid offer-img mb-3" alt="5 Frascos Gotazil">
+                            <p class="price"><s style="color: #ff4500;">R$797,00</s> <br> <span style="color: #880D11; font-weight: bold; font-size: 1.5em;">R$397,00</span></p>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-4 col-md-12 col-lg-6 mx-auto">
+                                        <img src="correios.png" class="img-fluid mb-2" alt="Frete Grátis">
+                                    </div>
+                                    <div class="col-12 mx-auto">
+                                        <img src="frete.svg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#preco" class="btn custom-btn shadow-lg fw-bolder text-uppercase">Comprar Agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm offer-card border-0 h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title" style="color: #880D11; font-weight: bold;">Compre 6 ganhe mais 6</h3>
+                            <img src="./6+6.svg" class="img-fluid offer-img mb-3" alt="12 Frascos Gotazil">
+                            <p class="price"><s style="color: #ff4500;">R$1394,00</s> <br> <span style="color: #880D11; font-weight: bold; font-size: 1.5em;">R$697,00</span></p>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-4 col-md-12 col-lg-6 mx-auto">
+                                        <img src="correios.png" class="img-fluid mb-2" alt="Frete Grátis">
+                                    </div>
+                                    <div class="col-12 mx-auto">
+                                        <img src="frete.svg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#preco" class="btn custom-btn shadow-lg fw-bolder text-uppercase">Comprar Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="py-5" style="background-image: url(https://gotazil.com.br/wp-content/uploads/2023/09/capa3-2.png);"> -->
+        
+        <section class="py-5" style="background-image: url(https://gotazil.com.br/wp-content/uploads/2023/09/capa3-2.png);">
+            <div class="container text-center">
+                <h2 class="fw-bold fs-1 text-uppercase" style="color: #fff; background: linear-gradient(to right, #0B99A7, #28CBDB); padding: 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    Perguntas Frequentes
+                </h2>
+                <div class="accordion mt-5" id="faqAccordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="card mb-4 border-0 shadow" style="border-radius: 15px;">
+                        <div class="card-header p-3" id="headingOne" style="background: linear-gradient(to right, #0B99A7, #28CBDB); cursor: pointer; border-radius: 15px 15px 0 0;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-white fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none;">
+                                    O site é seguro?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="card-body text-left" style="border-radius: 0 0 15px 15px;">
+                                Este site é 100% protegido contra recursos de má intenção. Suas informações pessoais são sigilosas segundo a nossa Política de Privacidade e a entrega é garantida! O <strong>Gotazil</strong> é vendido diariamente para pessoas de todo o Brasil.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="card mb-4 border-0 shadow" style="border-radius: 15px;">
+                        <div class="card-header p-3" id="headingTwo" style="background: linear-gradient(to right, #0B99A7, #28CBDB); cursor: pointer; border-radius: 15px 15px 0 0;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-white fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none;">
+                                    Qual o prazo de entrega?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="card-body text-left" style="border-radius: 0 0 15px 15px;">
+                                O prazo médio de entrega para o Brasil é de 1 a 10 dias úteis. O produto só é enviado após a confirmação do seu pagamento pela administradora do seu cartão de crédito ou após a confirmação do seu pagamento do boleto. Lembrando que estamos com promoção de FRETE GRÁTIS por tempo limitado e a compra no cartão acelera o processamento do seu pedido.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="card mb-4 border-0 shadow" style="border-radius: 15px;">
+                        <div class="card-header p-3" id="headingThree" style="background: linear-gradient(to right, #0B99A7, #28CBDB); cursor: pointer; border-radius: 15px 15px 0 0;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-white fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none;">
+                                    Por quanto tempo devo utilizar?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="card-body text-left" style="border-radius: 0 0 15px 15px;">
+                                Recomendamos o uso por no mínimo 3 meses para obter os melhores resultados, e todos os efeitos do composto. Pode também, ser utilizado sempre, até mesmo para a prevenção.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="card mb-4 border-0 shadow" style="border-radius: 15px;">
+                        <div class="card-header p-3" id="headingFour" style="background: linear-gradient(to right, #0B99A7, #28CBDB); cursor: pointer; border-radius: 15px 15px 0 0;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-white fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="text-decoration: none;">
+                                    O Gotazil tem autorização da Anvisa?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="card-body text-left" style="border-radius: 0 0 15px 15px;">
+                                Sim, o <strong>Gotazil</strong> é certificado e autorizado para comercialização em todo território Nacional através do anexo 1 da RDC 27/2010 em conformidade com a RDC 23/2000 da ANVISA.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="card mb-4 border-0 shadow" style="border-radius: 15px;">
+                        <div class="card-header p-3" id="headingFive" style="background: linear-gradient(to right, #0B99A7, #28CBDB); cursor: pointer; border-radius: 15px 15px 0 0;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-white fw-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="text-decoration: none;">
+                                    Quais as formas de pagamento?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="card-body text-left" style="border-radius: 0 0 15px 15px;">
+                                Basta escolher o kit que mais combina com você. <strong>Gotazil</strong> pode ser pago a vista, através de boleto bancário, PIX ou parcelado no cartão de crédito.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    <section class="py-5" style="background-image: url(https://gotazil.com.br/wp-content/uploads/2023/09/capa3-2.png);">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card bg-dark text-center p-3 w-100">
+                        <h2 class="fs-4 text-white">FORMAS DE PAGAMENTO</h2>
+                        <div class="col-6 mx-auto">
+                            <img src="https://evo.oficialtop.online/wp-content/uploads/2024/06/1245.png" class="img-fluid" alt="Formas de Pagamento">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card bg-dark text-center p-3 w-100">
+                        <h2 class="fs-4 text-white">RASTREAR ENTREGA</h2>
+                        <div class="col-10 mx-auto">
+                            <a href="https://rastreamento.correios.com.br/app/index.php" class="btn custom-btn shadow-lg fw-bolder" style="background-color: #059c00; color: #fff; padding: 15px 30px; font-size: 1em; border-radius: 50px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none; text-transform: uppercase; text-align: center; display: inline-block; text-decoration: none;">
+                                RASTREAR ENCOMENDA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card bg-dark text-center p-3 w-100">
+                        <h2 class="fs-4 text-white">SITE SEGURO</h2>
+                        <div class="col-6 mx-auto">
+                            <img src="https://evo.oficialtop.online/wp-content/uploads/2024/06/53.webp" class="img-fluid" alt="Site Seguro">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    </section>
+    <script>
+        document.querySelectorAll('.btn-custom').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Obrigado por escolher o Gotazil! Redirecionando para a página de pagamento...');
+            });
+        });
+    </script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
