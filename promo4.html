@@ -144,109 +144,173 @@
   
 
 
-    /* Styles for the pop-up */
     .popup-overlay {
-            display: none;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 999;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
         }
 
         .popup {
-            display: none;
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #ffffff;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            border-radius: 15px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             max-width: 500px;
-            width: 100%;
-            font-family: 'Montserrat', sans-serif;
-            animation: popupAnimation 0.5s ease-out;
-        }
-
-        @keyframes popupAnimation {
-            0% {
-                transform: translate(-50%, -60%);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translate(-50%, -50%);
-                opacity: 1;
-            }
+            width: 90%;
+            position: relative;
         }
 
         .popup h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #0B99A7;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
 
         .popup p {
-        font-size: 1.2rem;
-        color: #333333;
-        margin-bottom: 20px;
-        line-height: 1.5;
-    }
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
 
-    .popup p span.highlight {
-        font-weight: bold;
-        color: #0B99A7;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
-
-    .popup p br {
-        margin-bottom: 10px;
-    }
-
-        .popup p span {
+        .popup p span.highlight {
             font-weight: bold;
             color: #0B99A7;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .popup p br {
+            margin-bottom: 10px;
         }
 
         .popup img {
-            max-width: 100%;
+            max-width: 100px;
             margin-bottom: 20px;
-            border-radius: 15px;
         }
 
         .popup-button {
             background-color: #0B99A7;
-            color: #ffffff;
+            color: #fff;
             padding: 15px 30px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
             font-size: 1.2rem;
-            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
             text-transform: uppercase;
-            margin-top: 10px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
         }
 
         .popup-button:hover {
-            background-color: #28CBDB;
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: #086c7c;
         }
 
-        .popup-timer {
-            font-size: 1.1rem;
-            color: #FF4500;
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+        }
+
+
+
+
+
+
+
+
+
+
+       .footer {
+            background-color: #0B99A7;
+            color: #fff;
+            padding: 60px 0;
+            position: relative;
+        }
+        .footer h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #28CBDB;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #28CBDB;
+        }
+        .footer .btn {
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-transform: uppercase;
             font-weight: bold;
+            transition: all 0.3s;
         }
-
-        .highlight {
-            color: #FF4500;
+        .footer .btn-outline-light {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        .footer .btn-outline-light:hover {
+            background-color: #28CBDB;
+            color: #fff;
+        }
+        .footer .btn-whatsapp {
+            background-color: #25D366;
+            border: none;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        .footer .btn-whatsapp:hover {
+            background-color: #1DA955;
+        }
+        .footer .btn-whatsapp img {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 10px;
+        }
+        .footer .payment-methods {
+            max-width: 100%;
+            margin-top: 10px;
+        }
+        .footer .list-unstyled li {
+            margin-bottom: 10px;
+        }
+        .footer .list-unstyled li a {
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .footer .list-unstyled li a:hover {
+            color: #28CBDB;
+        }
+        .footer .elementor-spacer {
+            height: 20px;
+        }
+        .footer-bottom {
+            border-top: 1px solid #fff;
+            padding-top: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
         }
     </style>
 <link rel="icon" href="https://gotazil.com.br/wp-content/uploads/2023/09/favicon-150x150.png" sizes="32x32">
@@ -747,122 +811,43 @@
             </div>
         </section>
         
-        
-    <section style="background-image: url(https://gotazil.com.br/wp-content/uploads/2023/09/capa3-2.png);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 d-flex align-items-stretch mt-3">
-                    <div class="card bg-dark text-center p-3 w-100">
-                        <h2 class="fs-4 text-white">FORMAS DE PAGAMENTO</h2>
-                        <div class="col-6 mx-auto">
-                            <img src="https://evo.oficialtop.online/wp-content/uploads/2024/06/1245.png" class="img-fluid" alt="Formas de Pagamento">
-                        </div>
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <h2 class="fs-4 text-white">Rastreio</h2>
+                        <a href="https://rastreamento.correios.com.br/app/index.php" class="btn btn-outline-light">Rastrear Pedido</a>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <h2 class="fs-4 text-white">Atendimento</h2>
+                        <a href="#" class="btn btn-whatsapp">
+                            <img src="wpp.svg" alt="WhatsApp">
+                            Whatsapp
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <h2 class="fs-4 text-white">Links Importantes</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="./politicas.html">Política de Privacidade</a></li>
+                            <li><a href="./termos.html">Termos de Uso</a></li>
+                            <li><a href="https://rastreamento.correios.com.br/app/index.php">Rastrear Pedido</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="fs-4 text-white">Formas de Pagamento</h2>
+                        <img src="https://gotazil.com.br/wp-content/uploads/2023/09/pagamento-new-2.png" class="payment-methods" alt="Formas de Pagamento">
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-items-stretch mt-3">
-                    <div class="card bg-dark text-center p-3 w-100">
-                        <h2 class="fs-4 text-white">RASTREAR ENTREGA</h2>
-                        <div class="col-10 mx-auto">
-                            <a href="https://rastreamento.correios.com.br/app/index.php" class="btn custom-btn shadow-lg fw-bolder" style="background-color: #059c00; color: #fff; padding: 15px 30px; font-size: 1em; border-radius: 50px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none; text-transform: uppercase; text-align: center; display: inline-block; text-decoration: none;">
-                                RASTREAR ENCOMENDA
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-stretch mt-3 mb-3">
-                    <div class="card bg-dark text-center p-3 w-100">
-                        <h2 class="fs-4 text-white">SITE SEGURO</h2>
-                        <div class="col-6 mx-auto">
-                            <img src="https://evo.oficialtop.online/wp-content/uploads/2024/06/53.webp" class="img-fluid" alt="Site Seguro">
-                        </div>
-                    </div>
-                </div>
+                
             </div>
-        </div>
-   
-</section>
-        <section>
-                        <p style="font-size: 1px;">
-                            As informações fornecidas neste site são de caráter geral e não substituem a consulta com profissionais de saúde. O produto <strong>GotaZil</strong> é um suplemento alimentar e seus benefícios podem variar de pessoa para pessoa. Não deve ser utilizado como substituto para uma dieta equilibrada e um estilo de vida saudável.
-                        
-                        
-                            Embora o <strong>GotaZil</strong> contenha ingredientes que têm sido associados a benefícios para a saúde digestiva, não garantimos resultados específicos. O uso do suplemento deve ser acompanhado por uma alimentação balanceada e, preferencialmente, com orientação de um profissional de saúde.
-                        
-                        
-                            Este produto é registrado conforme a legislação vigente, mas não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Em caso de dúvidas, reações adversas ou persistência dos sintomas, consulte um médico ou profissional de saúde.
-                        
-                        
-                            A eficácia do <strong>GotaZil</strong> pode variar de acordo com o metabolismo individual e outros fatores. Resultados apresentados em depoimentos são individuais e podem não representar a experiência de todos os usuários. Para melhores resultados, siga as instruções de uso conforme recomendação do fabricante.
-                        
-                        
-                            Os dados pessoais dos usuários são tratados com confidencialidade e segurança, conforme nossa Política de Privacidade. Todas as transações realizadas neste site são protegidas e garantimos a segurança de seus dados.
-                        
-                        
-                            Promoções e ofertas são válidas por tempo limitado e sujeitas a alterações sem aviso prévio. Verifique sempre as condições atuais no momento da compra.
-                        
-                        
-                            Ao utilizar este site e adquirir nossos produtos, você concorda com os termos deste disclaimer e com nossa Política de Privacidade.
-                        </p>
-        </section>
-        
+        </footer>
 
 
-  <!-- Pop-up HTML -->
-  <div class="popup-overlay" id="popupOverlay"></div>
-  <div class="popup" id="popup">
-      <h2>Oferta Exclusiva!</h2>
-      <img src="1+2.svg" alt="Oferta 3 Gotazil pelo preço de 1">
-      <p>
-        Antes de sair, aproveite esta oferta <span class="highlight">IMPERDÍVEL</span>! <br>
-        <span class="highlight">COMPRE 1 GOTAZIL E LEVE 3</span> <br>
-        pelo preço de apenas <span class="highlight">R$197,00</span>! <br>
-        Esta oferta é válida apenas até <span class="popup-timer" id="currentDate"></span>. <br>
-        Não perca a chance de melhorar sua saúde com um <span class="highlight">DESCONTO INCRÍVEL</span>.
-    </p>
-    
-      <p class="popup-location" id="popupLocation"></p>
-      <button class="popup-button"><a href="https://ev.braip.com/campanhas/cpa/cam8kjr7n" class="fw-bolder text-uppercase text-white" style="text-decoration: none;">Quero Aproveitar Agora!</a></button>
-  </div>
 
-  <script>
-      document.addEventListener('mouseout', function (e) {
-          if (e.clientY < 0) {
-              showPopup();
-          }
-      });
-
-      function showPopup() {
-          document.getElementById('popupOverlay').style.display = 'block';
-          document.getElementById('popup').style.display = 'block';
-          updateDate();
-          getLocation();
-      }
-
-     
-
-      function updateDate() {
-          const date = new Date();
-          const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-          document.getElementById('currentDate').innerText = date.toLocaleDateString('pt-BR', options);
-      }
-
-      function getLocation() {
-          fetch('https://ipapi.co/json/')
-              .then(response => response.json())
-              .then(data => {
-                  const city = data.city;
-                  document.getElementById('popupLocation').innerText = `Oferta exclusiva para moradores de ${city}`;
-              })
-              .catch(error => console.error('Erro ao obter localização:', error));
-      }
-  </script>
-    <script>
-        document.querySelectorAll('.btn-custom').forEach(button => {
-            button.addEventListener('click', function() {
-                alert('Obrigado por escolher o Gotazil! Redirecionando para a página de pagamento...');
-            });
-        });
-    </script>
+       
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

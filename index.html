@@ -847,65 +847,7 @@
 
 
 
-        <div class="popup-overlay" id="popupOverlay">
-            <div class="popup" id="popup">
-                <button class="close-button" onclick="closePopup()">×</button>
-                <h2 class="fs-4 text-white">Oferta Exclusiva!</h2>
-                <img src="1+2.svg" alt="Oferta 3 Gotazil pelo preço de 1">
-                <p>
-                    Antes de sair, aproveite esta oferta <span class="highlight">IMPERDÍVEL</span>! <br>
-                    <span class="highlight">COMPRE 1 GOTAZIL E LEVE 3</span> <br>
-                    pelo preço de apenas <span class="highlight">R$197,00</span>! <br>
-                    Esta oferta é válida apenas até <span class="popup-timer" id="currentDate"></span>. <br>
-                    Não perca a chance de melhorar sua saúde com um <span class="highlight">DESCONTO INCRÍVEL</span>.
-                </p>
-                <p class="popup-location" id="popupLocation"></p>
-                <button class="popup-button">
-                    <a href="https://ev.braip.com/campanhas/cpa/cam8kjr7n" class="fw-bolder text-uppercase text-white" style="text-decoration: none;">Quero Aproveitar Agora!</a>
-                </button>
-            </div>
-        </div>
-        
-        <script>
-            document.addEventListener('mouseout', function (e) {
-                if (e.clientY < 0) {
-                    showPopup();
-                }
-            });
-        
-            function showPopup() {
-                document.getElementById('popupOverlay').style.display = 'flex';
-                updateDate();
-                getLocation();
-            }
-        
-            function closePopup() {
-                document.getElementById('popupOverlay').style.display = 'none';
-            }
-        
-            function updateDate() {
-                const date = new Date();
-                const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-                document.getElementById('currentDate').innerText = date.toLocaleDateString('pt-BR', options);
-            }
-        
-            function getLocation() {
-                fetch('https://ipapi.co/json/')
-                    .then(response => response.json())
-                    .then(data => {
-                        const city = data.city;
-                        document.getElementById('popupLocation').innerText = `Oferta exclusiva para moradores de ${city}`;
-                    })
-                    .catch(error => console.error('Erro ao obter localização:', error));
-            }
-        </script>
-    <script>
-        document.querySelectorAll('.btn-custom').forEach(button => {
-            button.addEventListener('click', function() {
-                alert('Obrigado por escolher o Gotazil! Redirecionando para a página de pagamento...');
-            });
-        });
-    </script>
+       
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
